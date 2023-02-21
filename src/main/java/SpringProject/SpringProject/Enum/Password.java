@@ -1,4 +1,4 @@
-package SpringProject.SpringProject;
+package SpringProject.SpringProject.Enum;
 
 import org.jetbrains.annotations.NotNull;
 

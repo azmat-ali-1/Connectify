@@ -1,5 +1,9 @@
-package SpringProject.SpringProject;
+package SpringProject.SpringProject.Service;
 
+import SpringProject.SpringProject.DTO.UserInput;
+import SpringProject.SpringProject.Enum.Message;
+import SpringProject.SpringProject.Model.User;
+import SpringProject.SpringProject.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.Collections;
@@ -29,11 +33,11 @@ public class UserService {
         return repository.addMemberInGroup(group,adminName,memberName);
     }
     //5
-    public HashMap<String, HashMap<String,User>> getAllGroupDetail(){
+    public HashMap<String, HashMap<String, User>> getAllGroupDetail(){
         return repository.getAllGroupDetail();
     }
     //6
-    public String sendMassageInGroup(String userName,String groupName,Message message) throws Exception {
+    public String sendMassageInGroup(String userName, String groupName, Message message) throws Exception {
             return repository.sendMassageInGroup(userName,groupName,message);
     }
     //7

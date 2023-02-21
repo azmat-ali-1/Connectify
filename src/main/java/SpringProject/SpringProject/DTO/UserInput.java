@@ -1,4 +1,4 @@
-package SpringProject.SpringProject;
+package SpringProject.SpringProject.DTO;
 
 public class UserInput {
     private int id;

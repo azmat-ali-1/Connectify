@@ -1,4 +1,6 @@
-package SpringProject.SpringProject;
+package SpringProject.SpringProject.Model;
+
+import SpringProject.SpringProject.Enum.Status;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +10,7 @@ public class User {
     private int id;
     private String name;
     private String email;
-    private Password Password;
+    private SpringProject.SpringProject.Enum.Password Password;
 
     private Status connect;
     private HashMap<String,User> connection;
@@ -22,7 +24,7 @@ public class User {
         this.connection = connection;
     }
 
-    public User(int id, String name, String email, SpringProject.SpringProject.Password password, HashMap<String, User> connection) {
+    public User(int id, String name, String email, SpringProject.SpringProject.Enum.Password password, HashMap<String, User> connection) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -41,7 +43,7 @@ public class User {
     public User() {
     }
 
-    public User(int id, String name, String email, SpringProject.SpringProject.Password password) {
+    public User(int id, String name, String email, SpringProject.SpringProject.Enum.Password password) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -72,11 +74,11 @@ public class User {
         this.email = email;
     }
 
-    public SpringProject.SpringProject.Password getPassword() {
+    public SpringProject.SpringProject.Enum.Password getPassword() {
         return Password;
     }
 
-    public void setPassword(SpringProject.SpringProject.Password password) {
+    public void setPassword(SpringProject.SpringProject.Enum.Password password) {
         Password = password;
     }
 

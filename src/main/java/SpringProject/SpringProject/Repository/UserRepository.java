@@ -1,9 +1,11 @@
-package SpringProject.SpringProject;
+package SpringProject.SpringProject.Repository;
 
-import com.fasterxml.jackson.annotation.JsonEnumDefaultValue;
-import org.jetbrains.annotations.NotNull;
+import SpringProject.SpringProject.DTO.UserInput;
+import SpringProject.SpringProject.Enum.Message;
+import SpringProject.SpringProject.Enum.Password;
+import SpringProject.SpringProject.Model.User;
+import SpringProject.SpringProject.Enum.Status;
 import org.springframework.stereotype.Repository;
-import org.w3c.dom.UserDataHandler;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -12,7 +14,7 @@ import java.util.List;
 
 @Repository
 public class UserRepository {
-    public HashMap<String,User> userHashMap = new HashMap<>();
+    public HashMap<String, User> userHashMap = new HashMap<>();
     public HashMap<String, HashMap<String,User>> groupHashMap = new HashMap<>();
     public HashMap<String,String> groupAdmin = new HashMap<>();
     public HashMap<String,HashMap<String,List<Message>>>groupMessage = new HashMap<>();

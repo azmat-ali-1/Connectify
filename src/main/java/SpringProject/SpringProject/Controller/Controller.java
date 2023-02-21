@@ -1,5 +1,9 @@
-package SpringProject.SpringProject;
+package SpringProject.SpringProject.Controller;
 
+import SpringProject.SpringProject.DTO.UserInput;
+import SpringProject.SpringProject.Enum.Message;
+import SpringProject.SpringProject.Model.User;
+import SpringProject.SpringProject.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
@@ -27,7 +31,7 @@ public class Controller {
     }
 
     @GetMapping("/getAllGroupDetail")
-    public HashMap<String, HashMap<String,User>> getAllGroupDetail(){
+    public HashMap<String, HashMap<String, User>> getAllGroupDetail(){
         return service.getAllGroupDetail();
     }
 
